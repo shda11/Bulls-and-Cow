@@ -47,7 +47,6 @@ fn main() {
         let mut question = String::new();
         println!("Guess the number array");
         io::stdin().read_line(&mut question).expect("Failed to read line");
-        println!("{:?}", secrete.answer);
         for i in 0..4 {
             let a: u8 = question.as_bytes()[i];
             let b: char = a as char;
